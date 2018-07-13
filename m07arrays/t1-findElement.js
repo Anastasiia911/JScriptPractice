@@ -1,5 +1,4 @@
-(function ()
-{
+(function () {
     var numbers = [];
 
     fillArrayWithRndNumbers(numbers, 1000);
@@ -13,26 +12,30 @@
     //
     //     el if exists
     //    -1 if not
-    function findElement(arr, el)
-    {
-        // TODO your code here
+    function findElement(arr, el) {
+        for (var i = 0; i < arr.length; i++) {
+
+            if (arr[i] === el) {
+                return arr[i];
+            }
+        }
+     return -1;
     }
 
-    function fillArrayWithRndNumbers(arr, count)
-    {
-        // TODO your code here
+    function fillArrayWithRndNumbers(arr, count) {
+        for (var i = 0; i < count; i++) {
+            arr[i] = getRndNumber();
+        }
 
     }
 
     // Utils
 
-    function printArray(arr)
-    {
+    function printArray(arr) {
         console.log(JSON.stringify(arr));
     }
 
-    function getRndNumber()
-    {
+    function getRndNumber() {
         return Math.floor(Math.random() * 100);
     }
 

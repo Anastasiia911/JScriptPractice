@@ -14,30 +14,23 @@
     // should swap elements with given positions
     function swap(arr, pos1, pos2)
     {
-        // TODO your code here
+
+        var tempElement =0;
+        tempElement=arr[pos1];
+        arr[pos1] = arr[pos2];
+        arr[pos2] = tempElement;
+
     }
 
 
     // Utils
 
-    // return count of elements el within array
-    function getCountOfElements(arr, el)
-    {
-        // TODO your code here
-    }
-
-    // returns:
-    //
-    //     el if exists
-    //    -1 if not
-    function findElement(arr, el)
-    {
-        // TODO your code here
-    }
-
     function fillArrayWithRndNumbers(arr, count)
     {
-        // TODO your code here
+        for (var i = 0 ; i<count; i++){
+            arr[i]=getRndNumber();
+
+        }
 
     }
 

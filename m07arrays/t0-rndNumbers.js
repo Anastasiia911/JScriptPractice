@@ -1,4 +1,5 @@
-(function ()
+(
+    function ()
 {
     var numbers = [];
 
@@ -8,9 +9,10 @@
 
     function fillArrayWithRndNumbers(arr, count)
     {
-        // TODO your code here
-
-    }
+        for (var i = 0 ; i<count; i++){
+            arr[i]=getRndNumber();
+            //console.log(arr.toString());
+        }}
 
     // Utils
 
@@ -24,4 +26,5 @@
         return Math.floor(Math.random() * 100);
     }
 
-})();
+}
+)();

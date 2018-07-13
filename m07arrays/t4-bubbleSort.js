@@ -21,16 +21,12 @@
         // TODO your code here
     }
 
-    // return count of elements el within array
     function getCountOfElements(arr, el)
     {
         // TODO your code here
     }
 
-    // returns:
-    //
-    //     el if exists
-    //    -1 if not
+
     function findElement(arr, el)
     {
         // TODO your code here
