@@ -12,7 +12,22 @@
     // if you will get sorted array - should be only one iteration
     function bubbleSort(arr)
     {
-        // TODO your code here
+        var wasSwapped = 0;
+
+        for (var j = 0; j <arr.length; j++){
+            if(j!==0 && wasSwapped == 0){return;}
+                wasSwapped--;
+            for (var i = 0; i < (arr.length-j); i++) {
+
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                    wasSwapped++;
+                }
+
+
+            }
+
+        }
     }
 
     // Utils
@@ -20,27 +35,20 @@
     // should swap elements with given positions
     function swap(arr, pos1, pos2)
     {
-        // TODO your code here
+
+        var tempElement = 0;
+        tempElement = arr[pos1];
+        arr[pos1] = arr[pos2];
+        arr[pos2] = tempElement;
     }
 
-    // return count of elements el within array
-    function getCountOfElements(arr, el)
-    {
-        // TODO your code here
-    }
-
-    // returns:
-    //
-    //     el if exists
-    //    -1 if not
-    function findElement(arr, el)
-    {
-        // TODO your code here
-    }
 
     function fillArrayWithRndNumbers(arr, count)
     {
-        // TODO your code here
+        for (var i = 0; i < count; i++) {
+            arr[i] = getRndNumber();
+
+        }
 
     }
 
